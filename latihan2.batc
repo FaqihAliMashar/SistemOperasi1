@@ -7,16 +7,12 @@ set /p b=masukkan nilai 'b':
 set /p c=masukkan nilai 'c':
 
 rem Step1:Kalkulasi Perhitungan (a*2+b*2)
-set /a perhitungan=((%a%*%a%)+(%b%*%b%))*((%a%*%a%)-(%b%*%b%))
+set /a perhitungan=((a*a)+(b*b))*((a*a)-(b*b))
 
 rem step2:Kalkulasi Perhitungan Penjjumlahan(a+b+c)
-set /a penjumlahan=(%a%+%b%+%c%)*(%a%+%b%+%c%)
+set /a penjumlahan=(a+b+c)*(a+b+c)
 
-rem step3:Perhitungan Nilai 
-set /a perhitungan=%perhitungan%*%perhitungan%
-
-rem step4: perhitungan akhir result
-set /a result=%perhitungan%/(%penjumlahan%)
-
+rem step3: perhitungan akhir result
+set /a result=perhitungan/penjumlahan
 echo hasilnya adalah: %result%
 pause
