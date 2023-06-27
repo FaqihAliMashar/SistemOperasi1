@@ -15,16 +15,16 @@ echo                  [6]Open Startup
 echo                  [7]chrome
 echo                  [88] kembali                           [0] 	keluar
 echo.
-set /p "pilihmenu=Masukkan Pilihan Menu:"
-if %pilihanmenu%==1  goto keyboard
-if %pilihanmenu%==2  goto Language
-if %pilihanmenu%==3  goto  Date
-if %pilihanmenu%==4  goto User
-if %pilihanmenu%==5  goto Sound
-if %pilihanmenu%==6  goto Startup
-if %pilihanmenu%==7  goto chrome
-if %pilihanmenu%==88 goto back
-if %pilihanmenu%==0  goto exit 
+set /p "pilihan=Masukkan Pilihan Menu:"
+if %pilihan%==1  goto keyboard
+if %pilihan%==2  goto Language
+if %pilihan%==3  goto  Date
+if %pilihan%==4  goto User
+if %pilihan%==5  goto Sound
+if %pilihan%==6  goto Startup
+if %pilihan%==7  goto chrome
+if %pilihan%==88 goto back
+if %pilihan%==0  goto exit 
 
 :Keyboard
 cls
